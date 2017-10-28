@@ -1,0 +1,261 @@
+.path {
+   animation-timing-function: ease-in-out;
+}
+
+#hair-1{
+  stroke-dasharray: 385;
+  stroke-dashoffset: 385;
+  animation: dash 4s linear forwards, FillHair 5.5s linear forwards;
+  animation-delay: 4s, 5s;
+  fill-opacity:0;
+
+}
+
+#hair-2{
+  stroke-dasharray: 290;
+  stroke-dashoffset: 290;
+  animation: dash 4s linear forwards, FillHair 7s linear forwards;
+  animation-delay: 2s, 3.5s;
+  fill-opacity:0;
+
+}
+
+#hair-3{
+  stroke-dasharray: 173;
+  stroke-dashoffset: 173;
+  animation: dash 4s linear forwards, FillHair 7s linear forwards;
+  animation-delay: 4.5s, 4.5s;
+  fill-opacity:0;
+
+}
+#left-eye-pupil{
+  stroke-dasharray: 28;
+  stroke-dashoffset: 28;
+  animation: dash 2s linear forwards;
+  animation: FillIn 2s linear forwards;
+  animation-delay: 7s !important;
+  fill-opacity: 0;
+
+}
+#left-eye-circle {
+  stroke-dasharray: 4;
+  stroke-dashoffset: 4;
+    animation: dash 1s linear forwards;
+      animation-delay: 7s !important;
+
+}
+
+#left-eye-up{
+  stroke-dasharray: 6;
+  stroke-dashoffset: 6;
+    animation: dash 2s linear forwards;
+
+}
+
+#left-eye-round{
+  stroke-dasharray: 21;
+  stroke-dashoffset: 21;
+    animation: dash 2s linear forwards;
+
+}
+
+
+
+
+#right-eye-pupil{
+  stroke-dasharray: 28;
+  stroke-dashoffset: 28;
+  animation: dash 2s linear forwards;
+  animation: FillIn 2s linear forwards;
+  animation-delay: 7s !important;
+  fill-opacity: 0;
+
+}
+#right-eye-circle {
+  stroke-dasharray: 4;
+  stroke-dashoffset: 4;
+    animation: dash 1s linear forwards;
+    animation-delay: 7s !important;
+
+}
+
+#right-eye-up{
+  stroke-dasharray: 6;
+  stroke-dashoffset: 6;
+    animation: dash 2s linear forwards;
+
+}
+
+#right-eye-round{
+  stroke-dasharray: 21;
+  stroke-dashoffset: 21;
+    animation: dash 2s linear forwards;
+
+}
+
+#face-outline{
+  stroke-dasharray: 254;
+  stroke-dashoffset: 254;
+    animation: dash 3s linear forwards;
+
+}
+#bang-right{
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+    animation: dash 2s linear forwards;
+
+}
+#nose{
+  stroke-dasharray: 126;
+  stroke-dashoffset: 126;
+  animation: dash 2s linear forwards;
+
+}
+#lips{
+  stroke-dasharray: 223;
+  stroke-dashoffset: 223;
+  animation: dash 4s linear forwards, FillHair2 4s linear forwards;
+  animation-delay: 0.7s, 5s;
+  fill-opacity:0;
+
+}
+#hair-left{
+  stroke-dasharray: 1407;
+  stroke-dashoffset: 1407;
+  animation: dash 6s linear forwards,FillHair 4s linear forwards;
+  animation-delay: 0s, 7s;
+  fill-opacity:0;
+}
+
+#Path-2{
+  stroke-dasharray: 1632;
+  stroke-dashoffset: 1632;
+  animation: dash 6s linear forwards, FillHair 7s linear forwards;
+  animation-delay: 0s, 5s;
+  fill-opacity:0;
+}
+
+#hair-highlight-1{
+  stroke-dasharray: 435;
+  stroke-dashoffset: 435;
+    animation: dash 4s linear forwards, FillHair 7s linear forwards;
+    animation-delay: 4.5s, 5s;
+    fill-opacity:0;;
+
+}
+
+#eye-outline-left{
+  stroke-dasharray: 52;
+  stroke-dashoffset: 52;
+  animation: dash 2s linear forwards;
+
+}
+
+#Path-3{
+  stroke-dasharray: 7;
+  stroke-dashoffset: 7;
+  animation-delay: 4.5s;
+  animation: dash 1s linear forwards;
+
+}
+
+.delay0{
+  animation-delay: 700 !important;
+
+}
+
+.delay1{
+  animation-delay: 1.5s !important;
+
+}
+
+
+.delay2{
+  animation-delay: 2s !important;
+}
+
+.delay2.5{
+  animation-delay: 3s !important;
+
+}
+
+.delay3{
+  animation-delay: 4s !important;
+}
+
+.delay4{
+  animation-delay: 4.5s !important;
+}
+
+.delay5{
+  animation-delay: 5.5s !important;
+}
+
+/*#hair-highlight-1 {
+  fill: silver;
+  animation-delay: 7s;
+  animation: FillIn 4s linear forwards;
+
+}*/
+
+
+/*normal forwards*/
+
+/*
+#Star {
+
+
+  -webkit-animation: fade 18s linear;
+
+}*/
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@keyframes FillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
+}
+
+
+@keyframes FillHair {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 0.26; }
+}
+
+@keyframes FillHair2 {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 0.40; }
+}
+
+
+/*
+.Animate-Draw {
+  fill-opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration: 1;
+
+  animation-name: DrawLine, FadeStroke, FillIn;
+  animation-duration: 4s, 1s, 1s;
+  animation-delay: 0s, 3.5s, 3.5s;
+}*/
+
+
+/*
+@-webkit-keyframes FillIn {
+  0%    {fill-opacity: 0;}
+  50%    {fill-opacity: 0;}
+  90%    {fill-opacity: 0.5;}
+  100%      {fill-opacity: 1;}
+}
+@keyframes FillIn {
+  0%    {fill-opacity: 0;}
+  50%    {fill-opacity: 0;}
+  90%    {fill-opacity: 0.5;}
+  100%      {fill-opacity: 1;}
+}*/
